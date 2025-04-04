@@ -91,7 +91,7 @@ a {
     }
 
         #nav-bar .nav-link:hover {
-            color: var(--accent);
+            font-weight: bold;
         }
 
     #nav-bar .nav-btn {
