@@ -1,6 +1,7 @@
 /* CSS */
 
 /* CSS Variables */
+
 :root {
     --background: #F4F4F4;
     --primary: #183B3F;
@@ -55,6 +56,8 @@ a {
         color: var(--accent);
     }
 
+/* Icons */
+
 #icon {
     color: var(--background);
     margin-left: 10px;
@@ -87,9 +90,9 @@ a {
         color: var(--primary);
     }
 
-    #nav-bar .nav-link:hover {
-        color: var(--accent);
-    }
+        #nav-bar .nav-link:hover {
+            color: var(--accent);
+        }
 
     #nav-bar .nav-btn {
         padding: 10px;
@@ -98,9 +101,9 @@ a {
         color: var(--background);
     }
 
-    #nav-bar .nav-btn:hover {
-        box-shadow: var(--shadow);
-    }
+        #nav-bar .nav-btn:hover {
+            box-shadow: var(--shadow);
+        }
 
 /* Footer */
 
@@ -174,21 +177,21 @@ a {
         margin: 15px;
     }
 
-    .carousel .carousel-item img {
-        width: auto;
-        height: inherit;
-        border-radius: 10px;
-        box-shadow: var(--shadow);
-    }
+        .carousel .carousel-item img {
+            width: auto;
+            height: inherit;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
 
-    .carousel-item .carousel-caption {
-        text-align: center;
-        font-size: 15px;
-        color: #555;
+        .carousel .carousel-item .carousel-caption {
+            text-align: center;
+            font-size: 15px;
+            color: #555;
 
-    }
+        }
 
-    .carousel-btns {
+    .carousel .carousel-btns {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -196,7 +199,7 @@ a {
         margin: 15px;
     }
 
-        .carousel-btns .carousel-btn {
+        .carousel .carousel-btns .carousel-btn {
             padding: 5px;
             margin: 5px;
             border-radius: 5px;
@@ -204,10 +207,12 @@ a {
             color: var(--background);
         }
 
-        .carousel-btns .carousel-btn:hover {
-            box-shadow: var(--shadow);
-            cursor: pointer;
-        }
+            .carousel .carousel-btns .carousel-btn:hover {
+                box-shadow: var(--shadow);
+                cursor: pointer;
+            }
+
+/* Resume */
 
 #resume-container {
     display: flex;
@@ -223,19 +228,12 @@ a {
         height: inherit;
     }
 
-    #resume-container #resume-text .resume-link {
-        margin: 5px;
-        padding: 5px;
-        border-radius: 5px;
-        background-color: var(--primary);
-        color: var(--background);
-    }
-
-    #resume-container #resume-text .resume-link:hover {
-        box-shadow: var(--shadow);
-    }
+/* Media Queries */
 
 @media (max-width: 768px) {
+
+    /* Global Styles */
+
     body {
         font-size: 15px;
     }
@@ -243,6 +241,8 @@ a {
     h1, h2, h3, h4, h5, h6 {
         font-size: 30px;
     }
+
+    /* Header & Navigation Bar */
 
     #nav-bar {
         flex-direction: column;
@@ -264,6 +264,8 @@ a {
             padding: 5px;
         }
     
+    /* Home */
+
     #home-container {
         flex-direction: column;
         align-items: center;
@@ -279,6 +281,8 @@ a {
             width: 80vw;
         }
 
+    /* About */
+
     #about-container {
         width: 80vw;
     }
@@ -288,8 +292,8 @@ a {
             height: 40vh;
         }
 
-        .carousel .carousel-item img {
-            width: auto;
-            height: inherit;
-        }
+            .carousel .carousel-item img {
+                width: auto;
+                height: inherit;
+            }
 }
