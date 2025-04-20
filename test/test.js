@@ -17,11 +17,6 @@ beforeEach(() => {
     });
     document = dom.window.document;
     
-    // Execute the script in the context of the JSDOM window
-    const scriptElement = document.createElement("script");
-    scriptElement.textContent = js;
-    document.body.appendChild(scriptElement);
-    
     // Ensure DOMContentLoaded has fired
     const event = new dom.window.Event('DOMContentLoaded');
     dom.window.document.dispatchEvent(event);
