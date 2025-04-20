@@ -2,6 +2,8 @@ const { JSDOM } = require("jsdom");
 const fs = require("fs");
 const path = require("path");
 
+const { moveCarousel } = require("../assets/js/carousel.js"); // Adjust the path as necessary
+
 // Read HTML content
 const html = fs.readFileSync(path.resolve(__dirname, "../index.html"), "utf8");
 // Read JavaScript content
