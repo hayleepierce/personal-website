@@ -4,8 +4,6 @@ const path = require("path");
 
 // Read HTML content
 const html = fs.readFileSync(path.resolve(__dirname, "../index.html"), "utf8");
-// Read JavaScript content
-const js = fs.readFileSync(path.resolve(__dirname, "../script.js"), "utf8");
 
 let dom;
 let document;
