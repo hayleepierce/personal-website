@@ -20,6 +20,26 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+      
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+      
+      - name: Install Dependencies
+        run: npm install
+      
+      - name: Run HTML Lint
+        run: npx htmlhint "*.html" "index.html"
+      
+      - name: Run CSS Lint
+        run: npm run lint:css
+
   build:
     runs-on: ubuntu-latest
     steps:
