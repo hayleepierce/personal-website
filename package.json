@@ -1,0 +1,16 @@
+{
+    "name": "simple-website",
+    "version": "1.0.0",
+    "devDependencies": {
+      "jest": "^29.0.0",
+      "@testing-library/dom": "^9.0.0",
+      "stylelint": "^15.0.0",
+      "stylelint-config-standard": "^32.0.0",
+      "htmlhint": "^1.1.4",
+      "jsdom": "^22.0.0"
+    },
+    "scripts": {
+      "test": "jest",
+      "lint:css": "stylelint '**/*.css'"
+    }
+  }
