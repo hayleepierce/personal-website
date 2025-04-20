@@ -111,7 +111,6 @@ a {
     align-items: center;
     justify-content: center;
     background-color: var(--primary);
-    height: fit-content;
     position: sticky;
     width: 100vw;
     top: 100%;
@@ -254,7 +253,7 @@ a {
 
 /* Media Queries */
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
 
     /* Global Styles */
 
@@ -323,7 +322,7 @@ a {
         width: 80vw;
         font-size: 20px;
     }
-    
+
         .collapsible-content {
             font-size: 15px;
         }
