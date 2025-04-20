@@ -18,7 +18,7 @@ describe('moveCarousel', () => {
         dom = new JSDOM(html, {
             runScripts: "dangerously",
             resources: "usable",
-            url: "http://localhost"
+            url: "https://hayleepierce.github.io/personal-website/"
         });
         document = dom.window.document;
         
