@@ -8,7 +8,6 @@
     --secondary: #AABA99;
     --tertiary: #838F77;
     --accent: #CCBA78;
-    --default-font-size: 1em;
     --shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     --montserrat: "Montserrat", sans-serif;
     --whisper: "Whisper", cursive;
@@ -38,7 +37,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 10px;
     background-color: var(--primary);
     color: var(--background); /* Text color */
-    font-size: 40px;
     border-radius: 5px;
 }
 
@@ -212,6 +210,32 @@ a {
                 cursor: pointer;
             }
 
+/* Portfolio */
+
+.collapsible {
+    width: 90vw;
+    text-align: left;
+    padding: 10px;
+    margin-left: 5vw;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: var(--primary);
+    color: var(--background);
+    cursor: pointer;
+    font-size: 30px;
+    }
+    
+    .collapsible-content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: var(--background);
+        color: var(--primary);
+        font-size: 20px;
+    }
+
 /* Resume */
 
 #resume-container {
@@ -236,10 +260,6 @@ a {
 
     body {
         font-size: 15px;
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-        font-size: 30px;
     }
 
     /* Header & Navigation Bar */
@@ -296,4 +316,14 @@ a {
                 width: auto;
                 height: inherit;
             }
+
+    /* Portfolio */
+
+    .collapsible {
+        width: 80vw;
+        font-size: 20px;
+    }
+        .collapsible-content {
+            font-size: 15px;
+        }
 }
