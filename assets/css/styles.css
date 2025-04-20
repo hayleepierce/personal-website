@@ -56,13 +56,13 @@ a {
 
 /* Icons */
 
-#icon {
+.icon {
     color: var(--background);
     margin-left: 10px;
     margin-right: 10px;
 }
 
-    #icon:hover {
+    .icon:hover {
         color: var(--accent);
     }
 
