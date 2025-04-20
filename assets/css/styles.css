@@ -256,7 +256,6 @@ a {
 @media (width <= 768px) {
 
     /* Global Styles */
-
     body {
         font-size: 15px;
     }
